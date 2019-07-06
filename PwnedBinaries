@@ -11,7 +11,7 @@ Protostar:
   Format1 - Complete
   Format2 - Complete
   Format3 - Complete
-  Format4
+  Format4  //Write to return address using %n to redirect execution flow?
   Heap0
   Heap1
   Heap2
