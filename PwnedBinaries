@@ -1,10 +1,10 @@
 Protostar:
-  Stack0 - Complete
-  Stack1 - Complete
-  Stack2 - Complete
-  Stack3 - Complete
-  Stack4 - Complete
-  Stack5 - Complete
+  Stack0  - Complete
+  Stack1  - Complete
+  Stack2  - Complete
+  Stack3  - Complete
+  Stack4  - Complete
+  Stack5  - Complete
   Stack6
   Stack7
   Format0 - Complete
@@ -12,7 +12,7 @@ Protostar:
   Format2 - Complete
   Format3 - Complete
   Format4  //Can't overwrite EIP return because of call to exit()
-  Heap0
+  Heap0   - Complete
   Heap1
   Heap2
   Heap3
