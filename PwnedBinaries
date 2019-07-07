@@ -13,7 +13,7 @@ Protostar:
   Format3 - Complete
   Format4  //Can't overwrite EIP return because of call to exit()
   Heap0   - Complete
-  Heap1
+  Heap1   - Complete
   Heap2
   Heap3
   Net0
