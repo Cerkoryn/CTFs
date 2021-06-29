@@ -15,7 +15,7 @@ class Orbit:
         self.velocityVector = calcVelocityVector(self)
 
     @classmethod
-    def fromPosAndVelVectors(Orbit, positionVector, velocityVector, body, t=datetime()):
+    def fromPosAndVelVectors(cls, positionVector, velocityVector, body, t=datetime()):
         # Math to convert stuff 
         semi_major_axis = 0
         eccentricity = 0
@@ -24,11 +24,11 @@ class Orbit:
         true_anomaly = 0
         body = 0
         time = t
-        newOrbit = Orbit(semi_major_axis, eccentricity, inclination, longitude_of_ascending_node, true_anomaly, body, time)
+        newOrbit = cls(semi_major_axis, eccentricity, inclination, longitude_of_ascending_node, true_anomaly, body, time)
         return newOrbit
 
     @classmethod
-    def fromPosVectors(Orbit, positionVectorAtT1, positionVectorAtT2, body, t1=datetime(), t2=datetime()):
+    def fromPosVectors(cls, positionVectorAtT1, positionVectorAtT2, body, t1=datetime(), t2=datetime()):
         # Math to convert stuff using Lambert's Equations
         semi_major_axis = 0
         eccentricity = 0
@@ -37,7 +37,7 @@ class Orbit:
         true_anomaly = 0
         body = 0
         time = t2
-        newOrbit = Orbit(Orbit, semi_major_axis, eccentricity, inclination, longitude_of_ascending_node, true_anomaly, body, time)
+        newOrbit = cls(Orbit, semi_major_axis, eccentricity, inclination, longitude_of_ascending_node, true_anomaly, body, time)
         return newOrbit
 
     def calcPositionVector(self):
